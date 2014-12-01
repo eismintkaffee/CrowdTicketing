@@ -9,6 +9,9 @@
 Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right" src="${path}"/>
 </sec:authorize></div>
 <br/><br/><br/>
+<h1>Testing Header</h1>
+<p><img src="<c:url value='/images/concerts-italy.jpg'/>" alt=.../></p> <%--Need to test out images --%>
+<br/>
 <table id="myTable" class="offers">
 <thead>
 <tr>
@@ -17,7 +20,7 @@ Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right
     <th>Contact</th> 
     <th>Event</th> 
     <th>Type</th> 
-    <th>Vanue</th> 
+    <th>Venue</th> 
     <th>Date/Time</th> 
     <th>Tkts Available</th> 
     <th>Total tkts</th> 
