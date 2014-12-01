@@ -23,6 +23,10 @@ $(document).ready(onReady);
 //-->
 </script>
 
+<p>
+<a href="${pageContext.request.contextPath}/">Return to Homepage</a>
+</p>
+
 <sf:form method="post"
 	action="${pageContext.request.contextPath}/docreate"
 	commandName="offer">
@@ -69,7 +73,7 @@ $(document).ready(onReady);
 			<td class="label"></td>
 			<td><input class="control" value="Save Event" type="submit" /></td>
 			
-			<a href="${pageContext.request.contextPath}/">Return to Homepage</a>
+			
 		</tr>
 
 		<c:if test="${offer.id != 0}">
