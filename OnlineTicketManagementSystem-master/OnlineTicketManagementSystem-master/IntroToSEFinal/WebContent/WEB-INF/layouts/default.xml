@@ -8,7 +8,7 @@
 		<put-attribute name="includes" value=""></put-attribute>
 		<put-attribute name="includes2" value="/WEB-INF/tiles/tablescript.jsp"></put-attribute>
 		<put-attribute name="toolbar" value=""></put-attribute>
-		<put-attribute name="title" value="Offers Homepage"></put-attribute>
+		<put-attribute name="title" value="Homepage"></put-attribute>
 		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
 		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
@@ -17,7 +17,7 @@
 	<definition name="home" extends="offers.base">
 	<put-attribute name="includes2"
 			value="/WEB-INF/tiles/tablescript.jsp"></put-attribute>
-		<put-attribute name="title" value="Offers Homepage"></put-attribute>
+		<put-attribute name="title" value="Homepage"></put-attribute>
 		<put-attribute name="toolbar" value="/WEB-INF/tiles/toolbar.jsp"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp"></put-attribute>
 	</definition>
@@ -25,7 +25,7 @@
 	<definition name="offers" extends="offers.base">
 	<put-attribute name="includes2"
 			value="/WEB-INF/tiles/tablescript.jsp"></put-attribute>
-		<put-attribute name="title" value="Current Offers"></put-attribute>
+		<put-attribute name="title" value="Current Events"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/offers.jsp"></put-attribute>
 	</definition>
 
@@ -52,7 +52,7 @@
 	</definition>
 
 	<definition name="createoffer" extends="offers.base">
-		<put-attribute name="title" value="Create Offer"></put-attribute>
+		<put-attribute name="title" value="Create Events"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/createoffer.jsp"></put-attribute>
 	</definition>
 
@@ -73,12 +73,12 @@
 	</definition>
 	
 	<definition name="offercreated" extends="offers.base">
-		<put-attribute name="title" value="Offer Created"></put-attribute>
+		<put-attribute name="title" value="Event Created"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/offercreated.jsp"></put-attribute>
 	</definition>
 	
 	<definition name="offerdeleted" extends="offers.base">
-		<put-attribute name="title" value="Offer Deleted"></put-attribute>
+		<put-attribute name="title" value="Event Deleted"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/offerdeleted.jsp"></put-attribute>
 	</definition>
 	

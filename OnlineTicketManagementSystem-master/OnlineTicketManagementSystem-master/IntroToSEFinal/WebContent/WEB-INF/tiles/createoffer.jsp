@@ -30,7 +30,7 @@ $(document).ready(onReady);
 
 	<table class="formtable">
 		<tr>
-			<td class="label">Your Event"</td>
+			<td class="label">Your Event:</td>
 			<td><sf:input class="control" path="title" name="title"
 					></sf:input><br /> <sf:errors path="title"
 					cssClass="error"></sf:errors></td>
@@ -48,7 +48,7 @@ $(document).ready(onReady);
 					cssClass="error"></sf:errors></td>
 		</tr>
 		<tr>
-			<td class="label">Date and Time:</td>
+			<td class="label">Date and Time(yyyy-mm-dd 24:00:00):</td>
 			<td><sf:input class="control" path="date" name="date"
 					></sf:input><br /> <sf:errors path="date"
 					cssClass="error"></sf:errors></td>
@@ -68,6 +68,8 @@ $(document).ready(onReady);
 		<tr>
 			<td class="label"></td>
 			<td><input class="control" value="Save Event" type="submit" /></td>
+			
+			<a href="${pageContext.request.contextPath}/">Return to Homepage</a>
 		</tr>
 
 		<c:if test="${offer.id != 0}">
@@ -84,3 +86,5 @@ $(document).ready(onReady);
 	</table>
 
 </sf:form>
+
+

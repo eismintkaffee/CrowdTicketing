@@ -49,7 +49,7 @@
 				<div id="matchpass"></div></td>
 		</tr>
 		 <tr>
-<td class="label">Upload Image (smaller than ):</td>
+<td class="label">Upload Image (smaller than 200px x 200px ):</td>
 <td><input  type="file" name="file" id="file"/></td>
 </tr> 
 <tr>
