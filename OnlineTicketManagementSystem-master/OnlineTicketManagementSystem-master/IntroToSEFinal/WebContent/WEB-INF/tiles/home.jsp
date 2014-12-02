@@ -10,7 +10,7 @@ Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right
 </sec:authorize></div>
 <br/><br/><br/>
 <h1>Events</h1>
-<p><img src="<c:url value='/resources/concerts-italy.jpg'/>" alt=.../></p> <%--Need to test out images --%>
+<%--<p>< src="<c:url value='/resources/images/concerts-italy.jpg'/>" alt=.../></p> Need to test out images --%>
 <br/>
 <table id="myTable" class="offers">
 <thead>
@@ -22,9 +22,9 @@ Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right
     <th>Type</th> 
     <th>Venue</th> 
     <th>Date/Time</th> 
-    <th>Tkts Available</th> 
-    <th>Total tkts</th> 
-    <th>No of Tkts</th> 
+    <th>Tickets Available</th> 
+    <th>Total Tickets</th> 
+    <th>No of Tickets</th> 
     <th></th>
 </tr> 
 </thead>
@@ -66,7 +66,9 @@ Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right
 	
 	function updatePage() {
 		$.getJSON("<c:url value="/getmessages"/>", updateMessageLink);
-	}
+	} 
+	<%--check this so we won't get redirected to get messages--%>
+	
 	function table() 
 	    { 
 	        $("#myTable").tablesorter(); 
