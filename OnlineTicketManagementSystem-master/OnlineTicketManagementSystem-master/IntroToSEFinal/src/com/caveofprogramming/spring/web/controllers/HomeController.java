@@ -49,13 +49,13 @@ public class HomeController {
 			byte[] bAvatar = user.getImage();
 			System.out.print(user);
 			try{
-	            FileOutputStream fos = new FileOutputStream("C:\\Users\\Ramya\\workspace\\spring-tutorial-169\\WebContent\\resources\\images\\"+username+".jpeg"); 
+	            FileOutputStream fos = new FileOutputStream("C:\\Users\\Tiffu_000\\Desktop\\project360\\CrowdTicketing\\OnlineTicketManagementSystem-master\\OnlineTicketManagementSystem-master\\IntroToSEFinal\\WebContent\\resources\\images\\"+username+".jpg"); 
 	            fos.write(bAvatar);
 	            fos.close();
 	        }catch(Exception e){
 	            e.printStackTrace();
 	        }
-			String path= "C:\\Users\\Ramya\\workspace\\spring-tutorial-169\\WebContent\\resources\\images\\"+username+".jpeg";
+			String path= "C:\\Users\\Tiffu_000\\Desktop\\project360\\CrowdTicketing\\OnlineTicketManagementSystem-master\\OnlineTicketManagementSystem-master\\IntroToSEFinal\\WebContent\\resources\\images\\"+username+".jpg";
 			model.addAttribute("path",path );
 			
 			

@@ -113,7 +113,7 @@ public class LoginController {
 			     fileInputStream.read(bFile);
 			    // fileInputStream.
 			     fileInputStream.close();
-			     FileOutputStream fos = new FileOutputStream("C:\\Users\\Tiffu_000\\workspace-sts-3.6.2\\proj360F\\WebContent\\resources\\images\\xxxx.jpeg"); 
+			     FileOutputStream fos = new FileOutputStream("C:\\Users\\Tiffu_000\\Desktop\\project360\\CrowdTicketing\\OnlineTicketManagementSystem-master\\OnlineTicketManagementSystem-master\\IntroToSEFinal\\WebContent\\resources\\images\\xxxx.jpeg"); 
 		            fos.write(bFile);
 		            fos.close();
 		        } catch (Exception e) {
@@ -193,13 +193,13 @@ public class LoginController {
 		byte[] bAvatar = user.getImage();
 		System.out.print(user);
 		try{
-            FileOutputStream fos = new FileOutputStream("C:\\Users\\Tiffu_000\\workspace-sts-3.6.2\\proj360F\\WebContent\\resources\\images\\"+username+".jpeg"); 
+            FileOutputStream fos = new FileOutputStream("C:\\Users\\Tiffu_000\\Desktop\\project360\\CrowdTicketing\\OnlineTicketManagementSystem-master\\OnlineTicketManagementSystem-master\\IntroToSEFinal\\WebContent\\resources\\images\\"+username+".jpg"); 
             fos.write(bAvatar);
             fos.close();
         }catch(Exception e){
             e.printStackTrace();
         }
-		String path= "C:\\Users\\Tiffu_000\\workspace-sts-3.6.2\\proj360F\\WebContent\\resources\\images\\"+username+".jpeg";
+		String path= "C:\\Users\\Tiffu_000\\Desktop\\project360\\CrowdTicketing\\OnlineTicketManagementSystem-master\\OnlineTicketManagementSystem-master\\IntroToSEFinal\\WebContent\\resources\\images\\"+username+".jpg";
 		model.addAttribute("path",path );
 		
 		model.addAttribute("user",new User());

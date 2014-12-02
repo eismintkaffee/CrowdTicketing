@@ -29,7 +29,7 @@
 			access="isAuthenticated()" />
 			
 		<security:intercept-url pattern="/getmessages"
-			access="isAuthenticated()" />
+			access="isAuthenticated()"  />
 			<security:intercept-url pattern="/events"
 			access="isAuthenticated()" />
 		<security:intercept-url pattern="/sendmessage"
@@ -59,7 +59,7 @@
 			access="permitAll" />
 		<security:intercept-url pattern="/**" access="denyAll" />
 		<security:form-login login-page="/login"
-			default-target-url="/" authentication-failure-url="/login?error=true" />
+			default-target-url="/events" authentication-failure-url="/login?error=true" />
 		<security:logout logout-success-url="/loggedout" />
 		<security:access-denied-handler
 			error-page="/denied" />
