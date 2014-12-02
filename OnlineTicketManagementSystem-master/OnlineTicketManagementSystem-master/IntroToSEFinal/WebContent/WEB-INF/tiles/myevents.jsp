@@ -11,7 +11,7 @@
     <th>Title</th> 
     <th>Type</th> 
     
-    <th>Vanue</th> 
+    <th>Venue</th> 
     <th>Date/Time</th> 
     
     <th>No of Tkts bought</th> 
@@ -38,6 +38,6 @@
 	</c:forEach>
 	</tbody>
 </table>
-
+<p><a href="${pageContext.request.contextPath}/">Click here to return</a></p>
 </body>
 </html>
