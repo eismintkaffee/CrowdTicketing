@@ -9,9 +9,6 @@
 
 </div>
 
-
-
-
 <script type="text/javascript">
 <!--
 	var timer;

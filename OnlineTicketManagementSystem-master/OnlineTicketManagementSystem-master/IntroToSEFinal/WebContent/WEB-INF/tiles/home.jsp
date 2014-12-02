@@ -9,7 +9,7 @@
 Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right" src="${path}"/>
 </sec:authorize></div>
 <br/><br/><br/>
-<h1>Testing Header</h1>
+<h1>Events</h1>
 <p><img src="<c:url value='/images/concerts-italy.jpg'/>" alt=.../></p> <%--Need to test out images --%>
 <br/>
 <table id="myTable" class="offers">
@@ -63,10 +63,10 @@ Hello, ${myuser.name}&nbsp;&nbsp;&nbsp;<img  height=50px width=50px align="right
 		updatePage();
 		window.setInterval(updatePage, 5000);
 	}
-	
+	<!--
 	function updatePage() {
 		$.getJSON("<c:url value="/getmessages"/>", updateMessageLink);
-	}
+	}//-->
 	function table() 
 	    { 
 	        $("#myTable").tablesorter(); 
